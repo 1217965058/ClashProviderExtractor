@@ -37,4 +37,5 @@ jobs:
             git config --local user.name "${GITHUB_ACTOR}"
             git add proxies.yaml
             git commit -m "Update extracted content [skip ci]"
-            git push
+            git pull origin main
+            git push origin main
