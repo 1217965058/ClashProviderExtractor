@@ -10,12 +10,13 @@ async function fetchData() {
   const day = today.getDate().toString().padStart(2, '0');
   
   const url = `https://freeclash.org/wp-content/uploads/${year}/${month}/${month}${day}.yaml`;
-
+  console.log(url);
   const response = await axios.get(url);
   return response.data;
 }
 
 function extractContent(yamlData) {
+  console.log(yamlData);
   const parsedYaml = yaml.parse(yamlData);
   return yaml.stringify({ proxies: parsedYaml.proxie });
 }
