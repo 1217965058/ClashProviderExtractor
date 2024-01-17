@@ -1,7 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
-const yaml = require('js-yaml');
+const yaml = require('yaml');
 
 async function fetchData() {
   const today = new Date();
@@ -16,10 +16,8 @@ async function fetchData() {
 }
 
 function extractContent(yamlData) {
-  const parsedYaml = yaml.load(yamlData);
-  // 在这里使用解析后的 YAML 对象提取你需要的内容
-  const extractedContent = parsedYaml.proxies;
-  return extractedContent;
+  const parsedYaml = yaml.parse(yamlData);
+  return yaml.stringify({proxies: parsedYaml.proxie});
 }
 
 async function saveToFile(content) {
