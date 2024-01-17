@@ -21,7 +21,7 @@ jobs:
 
     - name: Clear npm cache
       run: |
-            npm clear cache
+            npm cache clean --force
             rm -rf node_modules
             rm package-lock.json
 
