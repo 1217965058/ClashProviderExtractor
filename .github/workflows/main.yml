@@ -20,7 +20,10 @@ jobs:
         node-version: '16'
 
     - name: Clear npm cache
-      run: npm clear cache
+      run: |
+            npm clear cache
+            rm -rf node_modules
+            rm package-lock.json
 
     - name: Install dependencies
       run: npm install
