@@ -16,10 +16,10 @@ async function fetchData() {
 }
 
 function extractContent(yamlData) {
-  const parsedYaml = yaml.parse(yamlData);
+  const parsedYaml = yaml.load(yamlData);
   console.log(parsedYaml.proxies === undefined );
   console.log(parsedYaml.proxies);
-  return yaml.dump({ proxies: parsedYaml.proxies },{flow:true});
+  return yaml.dump({ proxies: parsedYaml.proxies }, { flowLevel: 1 });
 }
 
 async function saveToFile(content) {
