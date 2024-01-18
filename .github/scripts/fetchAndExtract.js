@@ -17,7 +17,8 @@ async function fetchData() {
 
 function extractContent(yamlData) {
   const parsedYaml = yaml.parse(yamlData);
-  console.log(parsedYaml);
+  console.log(parsedYaml.proxies === undefined );
+  console.log(parsedYaml.proxies);
   return yaml.stringify({ proxies: parsedYaml.proxies });
 }
 
