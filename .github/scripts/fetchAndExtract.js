@@ -19,7 +19,7 @@ function extractContent(yamlData) {
   const parsedYaml = yaml.parse(yamlData);
   console.log(parsedYaml.proxies === undefined );
   console.log(parsedYaml.proxies);
-  return yaml.stringify({ proxies: parsedYaml.proxies });
+  return yaml.dump({ proxies: parsedYaml.proxies },{flow:true});
 }
 
 async function saveToFile(content) {
