@@ -19,17 +19,14 @@ jobs:
       with:
         node-version: '16'
 
-    - name: Clear npm cache
-      run: |
-            npm cache clean --force
-            rm -rf node_modules
-            rm -f package-lock.json
+   # - name: Clear npm cache
+   #   run: |
+   #         npm cache clean --force
+   #         rm -rf node_modules
+   #         rm -f package-lock.json
 
     - name: Install dependencies
-      run: |
-           npm install js-yaml@latest
-           npm view js-yaml versions
-           npm install
+      run: npm install
 
     - name: Run script
       run: node .github/scripts/fetchAndExtract.js
@@ -39,6 +36,8 @@ jobs:
             git config --local user.email "${GITHUB_ACTOR}@users.noreply.github.com"
             git config --local user.name "${GITHUB_ACTOR}"
             git add proxies.yaml
-            git commit -m "Update extracted content [skip ci]"
+            git add package.json  
+            git add package-lock.json  
+            git commit -m "Update dependencies and extracted content [skip ci]"
             git pull origin main
             git push -u origin main
