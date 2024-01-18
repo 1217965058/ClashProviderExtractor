@@ -17,8 +17,10 @@ async function fetchData() {
 
 function extractContent(yamlData) {
   const parsedYaml = yaml.load(yamlData);
-  console.log(parsedYaml.proxies === undefined );
-  console.log(parsedYaml.proxies);
+  if(parsedYaml.proxies === undefined){
+    console.error("Error:", "invalid yaml data");
+    process.exit(1);
+  }
   return yaml.dump({ proxies: parsedYaml.proxies }, { flowLevel: 2 });
 }
 
