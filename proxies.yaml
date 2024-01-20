@@ -1,3 +1,2 @@
 proxies:
-  - {name: 🇺🇸_US_美国->🇬🇧_GB_英国, type: vmess, server: 08dfde51-8c5d-4160-8732-0745507cfd5b.cloudflare-gateway.com, port: 443, cipher: auto, uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b, alterId: 0, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /glweidf.sbs/linkws, headers: {host: mikasa.erenyeager.cloudns.biz}}}
-  - {name: 🇬🇮_GI_直布罗陀, type: vmess, server: 95.164.69.27, port: 80, cipher: auto, uuid: cd4a6d0d-4b26-4ee1-8a42-c2878b5c3b2a, alterId: 0, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess, headers: {host: internet.life.com.by}}}
+  - {name: _null_null->🇺🇸_US_美国, type: vmess, server: 19.namesilo123.top, port: 8880, cipher: auto, uuid: 309f84b9-49dd-408d-a0b6-8860393be802, alterId: 0, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /?ed=2048, headers: {host: freesg.sanfen002.top}}}
