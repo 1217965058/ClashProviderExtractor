@@ -1,4 +1,2 @@
 proxies:
-  - {name: 🇺🇸_US_美国_1, type: trojan, server: 89.116.180.158, port: 443, udp: true, password: f34ec9d8-3ae0-46ba-94e7-a03eaf2af651, sni: 3us2.pqjc.buzz, skip-cert-verify: true, network: ws, ws-opts: {path: /pq/us2, headers: {host: 3us2.pqjc.buzz}}}
-  - {name: 🇺🇸_US_美国_2, type: vmess, server: 95.164.46.154, port: 8080, cipher: auto, uuid: 431fda16-e0f8-4884-b4fd-965f03f86471, alterId: 0, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmess}}
-  - {name: 🇵🇸_PS_巴勒斯坦->🇹🇷_TR_土耳其, type: vmess, server: 82.213.5.50, port: 80, cipher: auto, uuid: 66fef53b-1b57-466d-89a4-bd99b90f6473, alterId: 0, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /@forwardv2ray, headers: {host: irisoft.servecounterstrike.com}}}
+  - {name: 🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦, type: vmess, server: 162.159.200.7, port: 80, cipher: auto, uuid: 9b170ad4-3211-4f0f-8bc9-80d356b67662, alterId: 0, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {host: er3.visaapp.top}}}
