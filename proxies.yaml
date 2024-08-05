@@ -1,6 +1,5 @@
 proxies:
-  - {name: 🇳🇱_NL_荷兰->🇨🇳_CN_中国, type: vmess, server: 45.131.208.228, port: 80, cipher: auto, uuid: f491cbe4-7548-446c-8d3e-64008e3b1325, alterId: 0, network: ws}
-  - {name: 🇺🇸_US_美国->🇨🇳_CN_中国, type: vmess, server: 104.25.176.31, port: 80, cipher: auto, uuid: 5ea4a644-07e9-4ad0-860d-50bd9b6e7f94, alterId: 0, network: ws}
-  - {name: 🇯🇵_JP_日本, type: trojan, server: 2sg1109303e88-c58a-94b1-d177-f0dee4367ea5.170203.xyz, port: 709, password: 518a6ff8-7233-4f28-8a40-d3fa82a5875d, sni: 2sg1109303e88-c58a-94b1-d177-f0dee4367ea5.170203.xyz}
-  - {name: 🇧🇷_BR_巴西->🇺🇸_US_美国, type: vmess, server: 188.114.98.40, port: 80, cipher: none, uuid: f491cbe4-7548-446c-8d3e-64008e3b1325, alterId: 0, sni: '', network: ws, fingerprint: ''}
-  - {name: 🇺🇸_US_美国->🇨🇦_CA_加拿大, type: vmess, server: 104.19.21.81, port: 2052, cipher: auto, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, sni: cdn3.freegradely.xyz, network: ws}
+  - {name: 🇺🇸_US_美国, type: vmess, server: 162.159.136.106, port: 80, cipher: auto, uuid: 5820093a-bb7d-4e15-8575-1a529f2d8282, alterId: 0, network: ws}
+  - {name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_1, type: vmess, server: 172.64.167.35, port: 2086, cipher: auto, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, sni: ip2.1457230.xyz, network: ws}
+  - {name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_2, type: vmess, server: 104.19.38.88, port: 2086, cipher: auto, uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339, alterId: 0, sni: '', network: ws}
+  - {name: 🇺🇸_US_美国->🇨🇦_CA_加拿大_3, type: vmess, server: 104.17.106.171, port: 2052, cipher: auto, uuid: d6b6d982-d52f-465a-b988-85670b23f64a, alterId: 0, sni: cdn3.freegradely.xyz, network: ws}
